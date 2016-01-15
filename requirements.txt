@@ -4,4 +4,5 @@ django-user-accounts==1.3.1
 metron==1.3.7
 pinax-eventlog==1.1.1
 
--e git://github.com/pinax/pinax-lms-activities.git@0518744d78e90cdca36d7b768a5448777b2231aa#egg=pinax-lms-activities
+# -e git://github.com/pinax/pinax-lms-activities.git@0518744d78e90cdca36d7b768a5448777b2231aa#egg=pinax-lms-activities
+pinax-lms-activities==0.3.0
