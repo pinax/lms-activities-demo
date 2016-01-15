@@ -134,6 +134,8 @@ INSTALLED_APPS = [
     "metron",
     "pinax.eventlog",
 
+    "pinax.lms.activities",
+
     # project
     "demo",
 ]
@@ -184,3 +186,7 @@ ACCOUNT_USE_AUTH_AUTHENTICATE = True
 AUTHENTICATION_BACKENDS = [
     "account.auth_backends.UsernameAuthenticationBackend",
 ]
+
+ACTIVITIES = {
+    "suggestion-box": "demo.activities.SuggestionBox",
+}
