@@ -1,0 +1,32 @@
+{% extends "site_base.html" %}
+
+{% block body_class %}dashboard{% endblock %}
+
+{% block body %}
+    <div class="row">
+        <div class="col-md-8">
+            <h1>Activities</h1>
+
+            {% if activities.inprogress %}
+                <h2>In Progress</h2>
+                {% for activity in activities.inprogress %}
+                    {% include "_dashboard_activity.html" %}
+                {% endfor %}
+            {% endif %}
+
+            {% if activities.repeatable %}
+                <h2>Repeatable</h2>
+                {% for activity in activities.repeatable %}
+                    {% include "_dashboard_activity.html" %}
+                {% endfor %}
+            {% endif %}
+
+            {% if activities.completed %}
+                <h2>Completed</h2>
+                {% for activity in activities.completed %}
+                    {% include "_dashboard_activity.html" %}
+                {% endfor %}
+            {% endif %}
+        </div>
+</div>
+{% endblock %}
