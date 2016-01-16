@@ -2,7 +2,7 @@ from django.shortcuts import redirect, render
 
 from account.decorators import login_required
 
-from pinax.lms.activities.models import get_activities
+from pinax.lms.activities.models import activities_for_user
 
 
 def home(request):
@@ -14,7 +14,7 @@ def home(request):
 @login_required
 def dashboard(request):
 
-    activities = get_activities(request.user)
+    activities = activities_for_user(request.user)
 
     return render(request, "dashboard.html", {
         "activities": activities,
