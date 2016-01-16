@@ -1,6 +1,10 @@
+from __future__ import division
+
+import random
+
 from django import forms
 
-from pinax.lms.activities.base import Survey, TwoChoiceQuiz
+from pinax.lms.activities.base import Survey, TwoChoiceQuiz, TwoChoiceWithAnswersQuiz
 
 
 class SuggestionBox(Survey):
@@ -37,3 +41,30 @@ class WouldYouRatherQuiz(TwoChoiceQuiz):
             ("Would you rather: ", ["collect goats", "collect stamps"]),
             ("Would you rather: ", ["watch a movie at home alone", "watch live music in a crowded bar with friends"]),
         ]
+
+
+class MathQuiz(TwoChoiceWithAnswersQuiz):
+
+    title = "Quick Math"
+    description = "a simple little math quiz"
+    repeatable = True
+
+    def make_equation(self):
+        num1 = random.choice(range(100))
+        num2 = random.choice(range(100))
+        op = random.choice(["+", "-", "*", "/"])
+        equation = "{} {} {}".format(num1, op, num2)
+        return (equation, eval(equation))
+
+    def construct_quiz(self):
+        quiz = []
+        while len(quiz) < 10:
+            equation, correct_answer = self.make_equation()
+            _, wrong_answer = self.make_equation()
+            question = "What is {}?".format(equation)
+            answers = [correct_answer, wrong_answer]
+            random.shuffle(answers)
+            quiz.append(
+                (question, answers, correct_answer)
+            )
+        return quiz
