@@ -138,6 +138,7 @@ INSTALLED_APPS = [
 
     # project
     "demo",
+    "demo.vocab"
 ]
 
 # A sample logging configuration. The only tangible logging
@@ -190,5 +191,6 @@ AUTHENTICATION_BACKENDS = [
 ACTIVITIES = {
     "suggestion-box": "demo.activities.SuggestionBox",
     "would-you-rather": "demo.activities.WouldYouRatherQuiz",
-    "math-quiz": "demo.activities.MathQuiz"
+    "math-quiz": "demo.activities.MathQuiz",
+    "vocab": "demo.vocab.activities.VocabQuiz"
 }

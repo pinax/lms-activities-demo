@@ -1,0 +1,82 @@
+[
+{
+    "model": "vocab.vocabulary",
+    "pk": 1,
+    "fields": {
+        "word": "abrasive",
+        "definition": "rough; coarse; harsh"
+    }
+},
+{
+    "model": "vocab.vocabulary",
+    "pk": 2,
+    "fields": {
+        "word": "bilk",
+        "definition": "cheat; defraud"
+    }
+},
+{
+    "model": "vocab.vocabulary",
+    "pk": 3,
+    "fields": {
+        "word": "covert",
+        "definition": "hidden; undercover"
+    }
+},
+{
+    "model": "vocab.vocabulary",
+    "pk": 4,
+    "fields": {
+        "word": "engender",
+        "definition": "cause"
+    }
+},
+{
+    "model": "vocab.vocabulary",
+    "pk": 5,
+    "fields": {
+        "word": "hangar",
+        "definition": "storage area (like garage) for a plane"
+    }
+},
+{
+    "model": "vocab.vocabulary",
+    "pk": 6,
+    "fields": {
+        "word": "knotty",
+        "definition": "complex; difficult to solve"
+    }
+},
+{
+    "model": "vocab.vocabulary",
+    "pk": 7,
+    "fields": {
+        "word": "nuance",
+        "definition": "something subtle; a fine shade of meaning"
+    }
+},
+{
+    "model": "vocab.vocabulary",
+    "pk": 8,
+    "fields": {
+        "word": "plagiarism",
+        "definition": "taking credit for someone else's writing or ideas"
+    }
+},
+{
+    "model": "vocab.vocabulary",
+    "pk": 9,
+    "fields": {
+        "word": "renown",
+        "definition": "fame"
+    }
+},
+{
+    "model": "vocab.vocabulary",
+    "pk": 10,
+    "fields": {
+        "word": "tangent",
+        "definition": "going off main subject"
+    }
+}
+]
