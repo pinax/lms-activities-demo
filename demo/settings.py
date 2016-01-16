@@ -189,4 +189,5 @@ AUTHENTICATION_BACKENDS = [
 
 ACTIVITIES = {
     "suggestion-box": "demo.activities.SuggestionBox",
+    "would-you-rather": "demo.activities.WouldYouRatherQuiz"
 }
