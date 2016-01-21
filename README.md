@@ -2,12 +2,14 @@
 
 [![](http://slack.pinaxproject.com/badge.svg)](http://slack.pinaxproject.com/)
 
-## Pinax
+Pinax
+------
 
 Pinax is an open-source platform built on the Django Web Framework. It is an ecosystem of reusable Django apps, themes, and starter project templates.
 This collection can be found at http://pinaxproject.com.
 
-## Getting Started
+Getting Started
+----------------
 
 Make sure you are using a virtual environment of some sort (e.g. `virtualenv` or
 `pyenv`).
