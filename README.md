@@ -8,6 +8,11 @@ Pinax
 Pinax is an open-source platform built on the Django Web Framework. It is an ecosystem of reusable Django apps, themes, and starter project templates.
 This collection can be found at http://pinaxproject.com.
 
+lms-activities-demo
+--------------------
+
+`lms-activities-demo`is a Django site for demoing Pinax LMS Activities.
+
 Getting Started
 ----------------
 
